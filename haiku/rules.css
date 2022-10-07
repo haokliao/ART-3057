@@ -1,0 +1,55 @@
+@charset "UTF-8";
+body {
+	background: #f2e8cf;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+  position: relative;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  top: 80px;
+	width: 780px;
+	background: #fec89a;
+	margin: auto; 
+	border: 1px solid #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #335c67;	
+}
+
+.header h1 {
+	margin: 0;
+	padding: 10px 0;
+	border: thick;
+	border: 10 px;
+	border-color:#000;
+}
+
+#haikuText_index{
+  text-decoration: none;
+}
+
+#haikuText_main {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif; 
+  font-size: 17px
+}
+
+#haikuText_main1 {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif; 
+	font-size: 25px
+}
+
+.center {
+  align-items: center;
+  width: 50%;
+}
+
+a:link {
+  color: red;
+}
+a:visited {
+	color: #335c67;
+}
