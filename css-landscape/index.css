@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:before, :after {
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+html, body {
+  min-width: 700px;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.sky {
+  flex: 10;
+  position: relative;
+  background: #f1dca7;
+}
+
+.earth {
+  flex: 1;
+  position: relative;
+  background: #132a13;
+}
+
+.sun {
+  position: absolute;
+  left: 20%;
+  bottom: 300px;
+  width: 300px;
+  height: 300px;
+  margin: 0 0 0 -20px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at top right, #d08c60 0%, #ffcb69 100%);
+}
+
+.hills {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+}
+
+.hills div:nth-child(3) {
+  position: absolute;
+  bottom: -350px;
+  left: -800px;
+  width: 500px;
+  height: 500px;
+  border-radius: 5%;
+  background: #31572c;
+  transform: rotate(50deg);
+}
+
+.hills div:nth-child(4) {
+  position: absolute;
+  bottom: -450px;
+  right: 0px;
+  width: 500px;
+  height: 600px;
+  border-radius: 30%;
+  background: #4f772d;
+  transform: rotate(45deg);
+}
+
+/* .hills div:nth-child(4) {
+  left: -40px;
+} */
+
+
+.airplane {
+  position: absolute;
+  bottom: 800px;
+  left: -10%;
+  z-index: 1;
+  width: 30px;
+  height: 5px;
+  border-radius: 5px 5px 5px 5px;
+  background: white;
+  animation: 10s fly linear infinite;
+}
+
+.airplane:after {
+  bottom: 0;
+  left: 4px;
+  width: 4px;
+  height: 15px;
+  border-radius: 5px 5px 5px 5px;
+  background: #ff0084;
+  transform: rotate(-45deg);
+}
+
+.airplane:before {
+  z-index: 1;
+  top: 2px;
+  left: 5px;
+  width: 1px;
+  height: 2px;
+  background: #ffc;
+  box-shadow: 22px 0 0 0 #ffc, 21px 0 0 0 #ffc, 20px 0 0 0 #ffc, 16px 0 0 0 #ffc, 12px 0 0 0 #ffc, 8px 0 0 0 #ffc, 4px 0 0 0 #ffc;
+}
+
+.airplanetwo {
+  position: absolute;
+  bottom: 300px;
+  left: -10%;
+  z-index: 1;
+  width: 30px;
+  height: 5px;
+  border-radius: 5px 5px 5px 5px;
+  background: #c92c2c;
+  animation: 30s fly linear infinite;
+}
+
+.airplanetwo:after {
+  bottom: 0;
+  left: 4px;
+  width: 4px;
+  height: 10px;
+  border-radius: 5px 5px 5px 5px;
+  background: #c92c2c;
+  transform: rotate(-45deg);
+}
+
+.airplanetwo:before {
+  z-index: 2;
+  top: 2px;
+  left: 5px;
+  width: 1px;
+  height: 1px;
+  background: #c92c2c;
+  box-shadow: 22px 0 0 0 #ffc, 21px 0 0 0 #ffc, 20px 0 0 0 #ffc, 16px 0 0 0 #ffc, 12px 0 0 0 #ffc, 8px 0 0 0 #ffc, 4px 0 0 0 #ffc;
+}
+
+
+.tree {
+  position: absolute;
+  left: 40%;
+  bottom: 0;
+}
+
+.tree div {
+  position: relative;
+  float: left;
+  display: block;
+  width: 16px;
+  height: 125px;
+  margin: 0 30px 0 0;
+  background: #90a955;
+}
+
+.tree div:before {
+  top: -30px;
+  left: -20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #ecf39e;
+}
+
+.tower {
+  position: absolute;
+  z-index: 1;
+  right: 28%;
+  bottom: 0;
+  margin: 0 -320px 0 0;
+  width: 13px;
+  height: 300px;
+  background: #ebfc2b;
+  /* animation: 75s fly linear infinite; */
+
+}
+
+.tower:before {
+  content: '';
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  margin: 0 0 0 -29px;
+  border-radius: 50%;
+  background: #fc8d2b;
+}
+
+.tower:after {
+  content: '';
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 150px;
+  margin: -150px 0 0 4px;
+  background: #ebfc2b;
+}
+
+.house {
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+}
+
+.house div:nth-child(1) {
+  position: relative;
+  float: left;
+  display: block;
+  width: 125px;
+  height: 250px;
+  border-radius: 5px 5px 0 0;
+  background: #f18701;
+}
+
+.house div:nth-child(1):before {
+  top: 20px;
+  left: 20px;
+  width: 5px;
+  height: 5px;
+  background: rgba(0, 0, 0, 0.2);
+  animation: .5s light infinite alternate;
+  box-shadow: 50px 220px 0 6px #ffc, 30px 220px 0 6px #ffc, 80px 180px 0 0 #ffc, 60px 180px 0 0 rgba(0, 0, 0, 0.2), 40px 180px 0 0 #ffc, 20px 180px 0 0 rgba(0, 0, 0, 0.2), 0 180px 0 0 rgba(0, 0, 0, 0.2), 80px 160px 0 0 rgba(0, 0, 0, 0.2), 60px 160px 0 0 rgba(0, 0, 0, 0.2), 40px 160px 0 0 rgba(0, 0, 0, 0.2), 20px 160px 0 0 rgba(0, 0, 0, 0.2), 0 160px 0 0 #ffc, 80px 140px 0 0 rgba(0, 0, 0, 0.2), 60px 140px 0 0 rgba(0, 0, 0, 0.2), 40px 140px 0 0 #ffc, 20px 140px 0 0 rgba(0, 0, 0, 0.2), 0 140px 0 0 #ffc, 80px 120px 0 0 #ffc, 60px 120px 0 0 #ffc, 40px 120px 0 0 rgba(0, 0, 0, 0.2), 20px 120px 0 0 #ffc, 0 120px 0 0 rgba(0, 0, 0, 0.2), 80px 100px 0 0 rgba(0, 0, 0, 0.2), 60px 100px 0 0 #ffc, 40px 100px 0 0 rgba(0, 0, 0, 0.2), 20px 100px 0 0 #ffc, 0 100px 0 0 rgba(0, 0, 0, 0.2), 80px 80px 0 0 #ffc, 60px 80px 0 0 #ffc, 40px 80px 0 0 rgba(0, 0, 0, 0.2), 20px 80px 0 0 rgba(0, 0, 0, 0.2), 0 80px 0 0 rgba(0, 0, 0, 0.2), 80px 60px 0 0 rgba(0, 0, 0, 0.2), 60px 60px 0 0 rgba(0, 0, 0, 0.2), 40px 60px 0 0 rgba(0, 0, 0, 0.2), 20px 60px 0 0 #ffc, 0 60px 0 0 #ffc, 80px 40px 0 0 rgba(0, 0, 0, 0.2), 60px 40px 0 0 rgba(0, 0, 0, 0.2), 40px 40px 0 0 rgba(0, 0, 0, 0.2), 20px 40px 0 0 rgba(0, 0, 0, 0.2), 0 40px 0 0 #ffc, 80px 20px 0 0 #ffc, 60px 20px 0 0 rgba(0, 0, 0, 0.2), 40px 20px 0 0 rgba(0, 0, 0, 0.2), 20px 20px 0 0 #ffc, 0 20px 0 0 #ffc, 80px 0 0 0 rgba(0, 0, 0, 0.2), 60px 0 0 0 #ffc, 40px 0 0 0 #ffc, 20px 0 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.house div:nth-child(1):after {
+  top: -40px;
+  left: 80px;
+  width: 8px;
+  height: 40px;
+  border-radius: 4px 4px 0 0;
+  background: #ebfc2b;
+  box-shadow: 20px 20px 0 0 #ebfc2b;
+}
+
+.house div:nth-child(2) {
+  position: relative;
+  top: 85px;
+  float: left;
+  display: block;
+  width: 145px;
+  height: 165px;
+  margin: 0 50px 0 25px;
+  border-radius: 5px 5px 0 0;
+  background: #f18701;
+}
+
+.house div:nth-child(2):before {
+  top: 20px;
+  left: 20px;
+  width: 5px;
+  height: 5px;
+  background: #ffc;
+  box-shadow: 60px 135px 0 6px #ffc, 40px 135px 0 6px #ffc, 100px 100px 0 0 rgba(0, 0, 0, 0.2), 80px 100px 0 0 rgba(0, 0, 0, 0.2), 60px 100px 0 0 rgba(0, 0, 0, 0.2), 40px 100px 0 0 rgba(0, 0, 0, 0.2), 20px 100px 0 0 rgba(0, 0, 0, 0.2), 0 100px 0 0 #ffc, 100px 80px 0 0 #ffc, 80px 80px 0 0 rgba(0, 0, 0, 0.2), 60px 80px 0 0 #ffc, 40px 80px 0 0 rgba(0, 0, 0, 0.2), 20px 80px 0 0 rgba(0, 0, 0, 0.2), 0 80px 0 0 rgba(0, 0, 0, 0.2), 100px 60px 0 0 rgba(0, 0, 0, 0.2), 80px 60px 0 0 #ffc, 60px 60px 0 0 rgba(0, 0, 0, 0.2), 40px 60px 0 0 rgba(0, 0, 0, 0.2), 20px 60px 0 0 #ffc, 0 60px 0 0 rgba(0, 0, 0, 0.2), 100px 40px 0 0 #ffc, 80px 40px 0 0 #ffc, 60px 40px 0 0 rgba(0, 0, 0, 0.2), 40px 40px 0 0 rgba(0, 0, 0, 0.2), 20px 40px 0 0 #ffc, 0 40px 0 0 #ffc, 100px 20px 0 0 #ffc, 80px 20px 0 0 rgba(0, 0, 0, 0.2), 60px 20px 0 0 #ffc, 40px 20px 0 0 rgba(0, 0, 0, 0.2), 20px 20px 0 0 rgba(0, 0, 0, 0.2), 0 20px 0 0 #ffc, 100px 0 0 0 rgba(0, 0, 0, 0.2), 80px 0 0 0 #ffc, 60px 0 0 0 #ffc, 40px 0 0 0 rgba(0, 0, 0, 0.2), 20px 0 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.house div:nth-child(2):after {
+  top: -8px;
+  left: 30px;
+  width: 80px;
+  height: 25px;
+  border-radius: 50% 50% 0 0;
+  background: #ebfc2b;
+}
+
+@keyframes fly {
+  0% {
+    left: -5%;
+  }
+  100% {
+    left: 105%;
+  }
+}
