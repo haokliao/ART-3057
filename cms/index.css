@@ -1,0 +1,17 @@
+*{
+  background-color: D3C0A0;
+}
+
+body{
+  justify-self: center;
+  text-align: center;
+}
+
+.album{
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.blurb{
+  padding: 2em 0em;
+}
