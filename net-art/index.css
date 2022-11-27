@@ -1,0 +1,29 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: bisque;
+}
+
+.container{
+  z-index: -1;
+  height: 800px;
+  width: 1000px;
+  position: absolute;
+}
+
+.arena{
+  z-index: 0;
+  height: 400px;
+  width: 700px;
+  position: absolute;
+}
+
+.text{
+  position: absolute;
+  top: 50px;
+}
+
+.rodeo{
+  cursor: url(./rodeo_clown.gif), auto;
+}

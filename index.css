@@ -1,7 +1,6 @@
 *{
   background-color: #FFFAF0;
   color: #000;
-
 }    
 
 body{
@@ -12,14 +11,11 @@ body{
 }
 
 .container{
-  margin-top: 5em;
+  margin: 5em 10em 0em 10em;
   display: inline-flex;
   flex-wrap: wrap;
-}
-
-.container div{
-  width: 300px;
-  height: 300px;
+  justify-content: center;
+  gap: 1em;
 }
 
 .homepage{
@@ -27,6 +23,6 @@ body{
 }
 
 img{
-  width: 180px;
-  height: 180px;
+  width: 150px;
+  height: 150px;
 }
